@@ -25,10 +25,10 @@ class UsagesController < ApplicationController
     
     @h = LazyHighCharts::HighChart.new('graph') do |f|
       f.chart(
-        :zoomType =>'x', 
+        :zoomType =>'x',
         :defaultSeriesType => 'spline',
         :height => 800
-        )
+      )
       
       f.title(:text => 'Electricity Usage')
       

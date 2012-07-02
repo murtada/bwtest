@@ -1,4 +1,4 @@
 <%= high_chart("my_id", @h) do |c| %>
-	<%= "options.tooltip.formatter = function() {return Highcharts.dateFormat('%B %e, %Y - %H:%M:%S', this.x) + ': ' + Highcharts.numberFormat(this.y, 2) + ' kwh';
+	<%= "options.tooltip.formatter = function() {return Highcharts.dateFormat('%B %e, %Y - %H:%M:%S', this.x) + ' UTC : ' + Highcharts.numberFormat(this.y, 2) + ' kwh';
   }" %>
 <% end%>
